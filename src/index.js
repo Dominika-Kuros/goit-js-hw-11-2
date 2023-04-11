@@ -48,6 +48,35 @@ searchForm.addEventListener('submit', async e => {
 //   document.body.scrollTop || document.documentElement.scrollTop;
 // const scrolled = (windowScroll / height) * 100;
 
+// window.addEventListener(
+//   'scroll',
+//   debounce(async () => {
+//     if (
+//       document.documentElement.scrollHeight - window.innerHeight <=
+//       window.scrollY
+//     ) {
+//       try {
+//         const { data } = await fetchPictures(searchInput.value, page, perPage);
+//         console.log(data);
+//         page++;
+//         gallery.innerHTML += renderGallery(data);
+//         Notiflix.Notify.failure(
+//           "We're sorry, but you've reached the end of search results."
+//         );
+//         const { height: cardHeight } = document
+//           .querySelector('.gallery')
+//           .firstElementChild.getBoundingClientRect();
+//         window.scrollBy({
+//           top: cardHeight * 2,
+//           behavior: 'smooth',
+//         });
+//       } catch (err) {
+//         console.log(err);
+//       }
+//     }
+//   }, 300)
+// );
+
 window.addEventListener(
   'scroll',
   debounce(() => {
