@@ -56,13 +56,10 @@ window.addEventListener(
       window.scrollY
     ) {
       try {
-        const data = await fetchPictures(searchInput.value, page, perPage);
+        let data = await fetchPictures(searchInput.value, page, perPage);
         console.log(data);
         page++;
         gallery.innerHTML += renderGallery(data.hits);
-        Notiflix.Notify.failure(
-          "We're sorry, but you've reached the end of search results."
-        );
         const { height: cardHeight } = document
           .querySelector('.gallery')
           .firstElementChild.getBoundingClientRect();
