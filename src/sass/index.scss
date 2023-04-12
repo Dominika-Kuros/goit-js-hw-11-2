@@ -1,19 +1,20 @@
 @import './common';
-
+body {
+  background-color: #ffffff;
+}
 .gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: 80px;
-  gap: 15px;
-  padding: 5px;
-  border-radius: 5px;
-  transition: all 0.25s ease-in-out;
+  margin: 0, auto;
+  max-width: 100%;
+  margin-top: 90px;
+  gap: 25px;
 }
 
 img {
-  width: 40%;
+  width: 80%;
   filter: grayscale(100%);
   border-radius: 5px;
   transition: all 0.25s ease-in-out;
@@ -23,7 +24,7 @@ img {
 }
 
 .info {
-  gap: 8px;
+  gap: 6px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-style: none;
@@ -51,7 +52,12 @@ a:link {
 
 .submit {
   padding: 15px;
-  width: 30px;
-  height: 60px;
-  background-color: #daf1f0;
+  width: 94px;
+  height: 52px;
+  background-color: #ffffff;
+  border: 1px solid rgb(107, 107, 107);
+  border-radius: 2px;
+  &:hover {
+    background-color: rgb(194, 236, 236);
+  }
 }
