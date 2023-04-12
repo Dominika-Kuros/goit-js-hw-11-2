@@ -7,8 +7,6 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 0, auto;
-  max-width: 100%;
   margin-top: 90px;
   gap: 25px;
 }
@@ -43,7 +41,6 @@ a:link {
   background-color: #daf1f0;
   height: 90px;
   box-shadow: 2px 2px 4px 1px rgb(66, 68, 90);
-  z-index: 1;
 }
 
 .header .input {
